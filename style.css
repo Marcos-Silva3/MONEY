@@ -64,27 +64,28 @@ ul li {
     letter-spacing:3px;
 }
 section {
-    width: 1100;
     padding: 30px 20px ;
-    height: 433px;
+    height: 88vh;
+    margin: 0 auto;
 }
 section h2 {
     color: var(--cor-title);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 230px;
+    margin-right: 100px;
     font-size: 40px;
     line-height:45px;
-    text-align: left;
-    margin-right: 100px;
     letter-spacing:1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
 }
 
 section p {
+    height: 150px; 
+    font-size: 30px;
+    margin-right: 200px;
     color: black;
     font-family: 'Inter';
-    font-size: 30px;
     text-align: left;
-    margin-right: 200px;
-    margin-top: 10px;
     font-weight: bolder;
 }
 
@@ -97,7 +98,7 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 70px 10px;
     height: 50px;
     width: 135px;
     color: white;
@@ -108,35 +109,40 @@ div {
 #link-p {
     background-color: var(--cor-title);
     letter-spacing: 1px;
+    margin: 0;
+    margin: 10px;
 }
 
 #link-s {
     background-color: rgba(0, 0, 0, 0.589);
-    border: 1px solid black;
+    margin: 0;
+    margin: 10px;
 }
 
 #leia-mais {
-    background-color: var(--cor-title);
+    
     height: 250px;
 }
 
 #leia-mais p {
     display: inline;
     letter-spacing: 1px;
-    background-color: blue;
+
     font-family: var(--fonte-title);
     font-size: 15px;
+    margin-top: 15px;
 }
 
 #leia-mais h1 {
-    background-color: green;
     font-size: 25px;
     font-family: var(--fonte-title);
     letter-spacing: 1px;
+    margin-top: 15px;
 }
 #leia-mais a {
-    background-color: black;
+    background-color: var(--cor-title);
     margin: 0px;
     font-size: 15px;
+    margin-top: 15px;
 }
 }
