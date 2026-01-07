@@ -63,7 +63,7 @@
         align-items: center;
         font-weight: 900;
         letter-spacing:3px;
-    }
+        }
     #primeira-section { 
         padding: 30px 20px;
    
@@ -95,60 +95,59 @@
         font-weight: bolder;
     }
 
-#primeira-section div {
-    display: flex;
-    justify-content: center;
-    height: 150px;
+    #primeira-section div {
+        display: flex;
+        justify-content: center;
+        height: 150px;
     
-}
- #primeira-section  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 10px;
-    height: 50px;
-    width: 135px;
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
+    }
+    #primeira-section  a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 10px;
+        height: 50px;
+        width: 135px;
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
     
- }
-#link-p {
-    background-color: var(--cor-title);
-    letter-spacing: 1px;
-    margin: 0;
-    margin: 10px;
-}
+    }
+    #link-p {
+        background-color: var(--cor-title);
+        letter-spacing: 1px;
+        margin: 0;
+        margin: 10px;
+    }
 
-#link-s {
-    background-color: rgba(0, 0, 0, 0.589);
-    margin: 0;
-    margin: 10px;
-}
+    #link-s {
+        background-color: rgba(0, 0, 0, 0.589);
+        margin: 0;
+        margin: 10px;
+    }
 
-#leia-mais {
-    height: 250px;
-}
+    #leia-mais {
+        height: 250px;
+    }
 
-#leia-mais p {
-    display: inline;
-    letter-spacing: 1px;
+    #leia-mais p {
+        display: inline;
+        letter-spacing: 1px;
+        font-family: var(--fonte-title);
+        font-size: 15px;
+        margin-top: 15px;
+    }
 
-    font-family: var(--fonte-title);
-    font-size: 15px;
-    margin-top: 15px;
-}
-
-#leia-mais h1 {
-    font-size: 25px;
-    font-family: var(--fonte-title);
-    letter-spacing: 1px;
-    margin-top: 15px;
-}
-#leia-mais a {
-    background-color: var(--cor-title);
-    margin: 0px;
-    font-size: 15px;
-    margin-top: 15px;
-}
+    #leia-mais h1 {
+        font-size: 25px;
+        font-family: var(--fonte-title);
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    #leia-mais a {
+        background-color: var(--cor-title);
+        margin: 0px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
 }
