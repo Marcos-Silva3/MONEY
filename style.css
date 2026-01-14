@@ -163,4 +163,41 @@
         font-family: var(--fonte-title);
         color: black;
     }
+    .terceira-section {
+        background-color: red;
+        height: auto
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+    .terceira-section div{
+        background-color: blue;
+        height: auto;
+        width: 100%;
+        margin: 0px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .terceira-section div img {
+        background-image: url(IMAGENS/Captura\ de\ tela\ 2026-01-14\ 130202.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        height:290px;
+        }
+        .terceira-section  div  span {
+        background-color: black;
+        height: 1px;
+        width: 30px;
+        margin-top: 10px;
+    }
+
+    .terceira-section div h2 {
+        margin-top: 5px;
+        font-family:var(--fonte-title)
+
+    }
+
+    .terceira-section div p {
+        text-align: justify
+    }
 }
