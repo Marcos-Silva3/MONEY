@@ -14,8 +14,11 @@
 @media screen and (max-width: 780px) {
     header {
         font-family: var(--fonte-title);
+        background-image: url(IMAGENS/bg_color_imagem_2.png);
+        background-color: white;
         
     }
+
     #nav-father {
         background-color: rgb(0, 0, 0);
         display: flex;
@@ -178,17 +181,18 @@
         flex-direction: column;
     }
     .terceira-section div img {
-        background-image: url(IMAGENS/Captura\ de\ tela\ 2026-01-14\ 130202.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        height:350px;
         background-color: red;
+        width: 100%;
+        height:350px;
     }
     .terceira-section  div  span {
         height: 1px;
-        width: 30px;
-        margin-top: 10px;
+        width: 40px;
+        margin-top: 30px;
+        background-color: black;
     }
 
     .terceira-section div h2 {
@@ -201,5 +205,32 @@
         text-align: justify;
         font-family: var(--fonte-title);
         margin-top: 5px;
+    }
+    .terceira-section div img {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:350px;
+    }
+
+    #quarta-section {
+        margin-top: 20px;
+    }
+    #quarta-section div span {
+        margin-top: 30px;
+    }
+    #quarta-section div img {
+        width: 100%;
+        background-size: cover;
+    }
+    #quinta-section {
+        margin-top: 20px;
+    }
+    #quinta-section div span {
+        margin-top: 30px;
+    }
+    #quinta-section div img {
+        width: 100%;
+        background-size: cover;
     }
 }
