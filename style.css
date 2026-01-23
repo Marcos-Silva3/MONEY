@@ -5,30 +5,27 @@
 }
 :root {
     --fonte-title:"Inter", sans-serif;
-                  font-optical-sizing: auto;
-                  font-weight:weight;
-                  font-style: normal;
+                font-optical-sizing: auto;
+                font-weight:weight;
+                font-style: normal;
     --cor-title:#7AC5D8;
 }
 
 @media screen and (max-width: 780px) {
     header {
         font-family: var(--fonte-title);
-        background-image: url(IMAGENS/bg_color_imagem_2.png);
-        background-color: white;
-        
-    }
+        background-color: white;  
+        }
 
-    #nav-father {
+        #nav-father {
         background-color: rgb(0, 0, 0);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
         margin-top: 0px;
-    }
-
-    #nav-father h1 {
+        }
+        #nav-father h1 {
         height: 50px;
         width: 140px;
         font-size: 30px;
@@ -38,9 +35,9 @@
         color: white;
         border: 1px solid var(--cor-title);
         background-color: rgba(0, 0, 0, 0.655);
-        
-    }
-    #material-symbols-outlined {
+        }
+
+        #material-symbols-outlined {
         font-family: 'Material Symbols Outlined';
         font-weight: normal;
         font-style: normal;
@@ -55,7 +52,7 @@
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
         color: var(--cor-title);
-    }
+        }
         ul li {
         background-color: rgba(0, 0, 0, 0.726);
         color: var(--cor-title);
@@ -66,14 +63,12 @@
         font-weight: 900;
         letter-spacing:3px;
         }
-    #primeira-section { 
+        #primeira-section { 
         padding: 3;
         margin: 0px 20px;;
-   
+        }
 
-    }
-
-    #primeira-section h2 {
+        #primeira-section h2 {
         height: 230px;
         width: 300px;
         margin-right: 100px;
@@ -83,9 +78,9 @@
         color: var(--cor-title);
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: left;
-    }
+        }
 
-    #primeira-section p {
+        #primeira-section p {
         height: 150px; 
         width: 300px;
         font-size: 30px;
@@ -96,15 +91,15 @@
         font-family: 'Inter';
         text-align: left;
         font-weight: bolder;
-    }
+        }
 
-    #primeira-section div {
+        #primeira-section div {
         display: flex;
         justify-content: center;
         height: 150px;
-    
-    }
-    #primeira-section  a {
+        }
+
+        #primeira-section  a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -115,47 +110,47 @@
         text-decoration: none;
         font-family: sans-serif;
     
-    }
-    #link-p {
+        }
+        #link-p {
         background-color: var(--cor-title);
         letter-spacing: 1px;
         margin: 0;
         margin: 10px;
-    }
+        }
 
-    #link-s {
+        #link-s {
         background-color: rgba(0, 0, 0, 0.589);
         margin: 0;
         margin: 10px;
-    }
+        }
 
-    #segunda-section {
+        #segunda-section {
         height: 250px;
         padding: 20px 20px;
-    }
+        }
 
-    #segunda-section p {
+        #segunda-section p {
         letter-spacing: 1px;
         font-family: var(--fonte-title);
         font-size: 20px;
         margin-top: 15px;
-    }
+        }
 
-    #segunda-section h1 {
+        #segunda-section h1 {
         font-size: 25px;
         font-family: var(--fonte-title);
         letter-spacing: 1px;
         margin-top: 10px;
-    }
+        }
 
-    #segunda-section div {
+        #segunda-section div {
 
         margin-top: 10px;
         height: 55px;
         text-decoration: none;
         font-size: 20px;
-    }
-    #segunda-section div a {
+        }
+        #segunda-section div a {
         height: 100%;
         width: 130px;
         font-size: 14px;
@@ -166,71 +161,71 @@
         background-color: var(--cor-title);
         font-family: var(--fonte-title);
         color: black;
-    }
-    .terceira-section {
+        }
+        .terceira-section {
         height: auto;
         width: 100%;
         display: flex;
         justify-content: start;
-    }
-    .terceira-section div{
+        }
+        .terceira-section div{
         height: auto;
         width: 100%;
         margin: 0px 20px;
         display: flex;
         flex-direction: column;
-    }
-    .terceira-section div img {
+        }
+        .terceira-section div img {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: red;
         width: 100%;
         height:350px;
-    }
-    .terceira-section  div  span {
+        }
+        .terceira-section  div  span {
         height: 1px;
         width: 40px;
         margin-top: 30px;
         background-color: black;
-    }
+        }
 
-    .terceira-section div h2 {
+        .terceira-section div h2 {
         margin-top: 10px;
         font-family:var(--fonte-title)
 
-    }
+        }
 
-    .terceira-section div p {
+        .terceira-section div p {
         text-align: justify;
         font-family: var(--fonte-title);
         margin-top: 5px;
-    }
-    .terceira-section div img {
+        }
+        .terceira-section div img {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
         height:350px;
-    }
+        }
 
-    #quarta-section {
+        #quarta-section {
         margin-top: 20px;
-    }
-    #quarta-section div span {
+        }
+        #quarta-section div span {
         margin-top: 30px;
-    }
-    #quarta-section div img {
+        }
+        #quarta-section div img {
         width: 100%;
         background-size: cover;
-    }
-    #quinta-section {
+        }
+        #quinta-section {
         margin-top: 20px;
-    }
-    #quinta-section div span {
+        }
+        #quinta-section div span {
         margin-top: 30px;
-    }
-    #quinta-section div img {
+        }
+        #quinta-section div img {
         width: 100%;
         background-size: cover;
-    }
+        }
 }
