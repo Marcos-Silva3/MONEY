@@ -22,18 +22,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
-        margin-top: 0px;
+        padding: 11px 35px;
         }
+
         #nav-father h1 {
-        height: 50px;
         width: 140px;
         font-size: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
-        border: 1px solid var(--cor-title);
         background-color: rgba(0, 0, 0, 0.655);
         }
 
@@ -51,11 +49,12 @@
         direction: ltr;
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
-        color: var(--cor-title);
+        color: aliceblue;
         }
+
         ul li {
         background-color: rgba(0, 0, 0, 0.726);
-        color: var(--cor-title);
+        color: aliceblue;
         height: 25vh;
         display: flex;
         justify-content: center;
@@ -63,169 +62,53 @@
         font-weight: 900;
         letter-spacing:3px;
         }
-        #primeira-section { 
-        padding: 3;
-        margin: 0px 20px;;
+
+        .primeira-section {
+            background-color: red;
+            height: 660px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .primeira-section-title{
+            background-color: #045174;
+            padding-top: 70px;
+            height: 360px;
+            color: #CEEEFD;
+            font-weight: bolder;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .primeira-section-title > h1{
+           color: #CEEEFD;
+           padding: 0px 10px;
+           font-size: 40px;
+        }
+        .primeira-section-title > span {
+            margin-top: 15px;
+            width: 100px;
+            background-color: #CEEEFD;
+            border: 3px solid #CEEEFD;
         }
 
-        #primeira-section h2 {
-        height: 230px;
-        width: 300px;
-        margin-right: 100px;
-        font-size: 40px;
-        line-height:45px;
-        padding-top: 25px;
-        color: var(--cor-title);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: left;
+        .primeira-section-title > p {
+            margin-top: 30px;
+            padding: 0px 40px;
         }
-
-        #primeira-section p {
-        height: 150px; 
-        width: 300px;
-        font-size: 30px;
-        margin-right: 200px;
-        padding-top: 20px;
-        letter-spacing: 2px;
-        color: black;
-        font-family: 'Inter';
-        text-align: left;
-        font-weight: bolder;
+        .primeira-section-title > a {
+            background-color: green;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 180px;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none;
         }
-
-        #primeira-section div {
-        display: flex;
-        justify-content: center;
-        height: 150px;
-        }
-
-        #primeira-section  a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto 10px;
-        height: 50px;
-        width: 135px;
-        color: white;
-        text-decoration: none;
-        font-family: sans-serif;
-    
-        }
-        #link-p {
-        background-color: var(--cor-title);
-        letter-spacing: 1px;
-        margin: 0;
-        margin: 10px;
-        }
-
-        #link-s {
-        background-color: rgba(0, 0, 0, 0.589);
-        margin: 0;
-        margin: 10px;
-        }
-
-        #segunda-section {
-        height: 250px;
-        padding: 20px 20px;
-        }
-
-        #segunda-section p {
-        letter-spacing: 1px;
-        font-family: var(--fonte-title);
-        font-size: 20px;
-        margin-top: 15px;
-        }
-
-        #segunda-section h1 {
-        font-size: 25px;
-        font-family: var(--fonte-title);
-        letter-spacing: 1px;
-        margin-top: 10px;
-        }
-
-        #segunda-section div {
-
-        margin-top: 10px;
-        height: 55px;
-        text-decoration: none;
-        font-size: 20px;
-        }
-        #segunda-section div a {
-        height: 100%;
-        width: 130px;
-        font-size: 14px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        background-color: var(--cor-title);
-        font-family: var(--fonte-title);
-        color: black;
-        }
-        .terceira-section {
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        }
-        .terceira-section div{
-        height: auto;
-        width: 100%;
-        margin: 0px 20px;
-        display: flex;
-        flex-direction: column;
-        }
-        .terceira-section div img {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: red;
-        width: 100%;
-        height:350px;
-        }
-        .terceira-section  div  span {
-        height: 1px;
-        width: 40px;
-        margin-top: 30px;
-        background-color: black;
-        }
-
-        .terceira-section div h2 {
-        margin-top: 10px;
-        font-family:var(--fonte-title)
-
-        }
-
-        .terceira-section div p {
-        text-align: justify;
-        font-family: var(--fonte-title);
-        margin-top: 5px;
-        }
-        .terceira-section div img {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height:350px;
-        }
-
-        #quarta-section {
-        margin-top: 20px;
-        }
-        #quarta-section div span {
-        margin-top: 30px;
-        }
-        #quarta-section div img {
-        width: 100%;
-        background-size: cover;
-        }
-        #quinta-section {
-        margin-top: 20px;
-        }
-        #quinta-section div span {
-        margin-top: 30px;
-        }
-        #quinta-section div img {
-        width: 100%;
-        background-size: cover;
-        }
-}
+    }
+        
