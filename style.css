@@ -3,18 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --fonte-title:"Inter", sans-serif;
-                font-optical-sizing: auto;
-                font-weight:weight;
-                font-style: normal;
-    --cor-title:#7AC5D8;
-}
-
 @media screen and (max-width: 780px) {
     header {
         font-family: var(--fonte-title);
-        background-color: white;  
+        background-color: white;
+         
         }
 
         #nav-father {
@@ -26,13 +19,14 @@
         }
 
         #nav-father h1 {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.655);
         width: 140px;
         font-size: 30px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.655);
         }
 
         #material-symbols-outlined {
@@ -56,11 +50,13 @@
         background-color: rgba(0, 0, 0, 0.726);
         color: aliceblue;
         height: 25vh;
+        font-weight: 900;
+        letter-spacing:1px;
+        height: 31vh; 
+        font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: 900;
-        letter-spacing:3px;
         }
 
         .primeira-section {
@@ -71,7 +67,7 @@
         .primeira-section-title{
             background-color: #045174;
             padding-top: 70px;
-            height: 360px;
+            height: 100vh;
             color: #CEEEFD;
             font-weight: bolder;
             font-size: 15px;
@@ -105,6 +101,7 @@
             margin-top: 10px;
             font-size: 20px;
             border-radius: 8px;
+            margin-top: 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
