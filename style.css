@@ -30,11 +30,12 @@
         }
 
         #material-symbols-outlined {
+        font-size: 35px;
+        line-height: 1;
+        color: aliceblue;
         font-family: 'Material Symbols Outlined';
         font-weight: normal;
         font-style: normal;
-        font-size: 35px;
-        line-height: 1;
         letter-spacing: normal;
         text-transform: none;
         display: inline-block;
@@ -43,16 +44,14 @@
         direction: ltr;
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
-        color: aliceblue;
         }
 
         ul li {
         background-color: rgba(0, 0, 0, 0.726);
         color: aliceblue;
-        height: 25vh;
+        height: 31vh; 
         font-weight: 900;
         letter-spacing:1px;
-        height: 31vh; 
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: center;
@@ -65,9 +64,9 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .primeira-section-title{
-            background-color: #045174;
-            padding-top: 100px;
-            height: 100vh;
+            background-color: #044b74;
+            padding-top: 110px;
+            height: 90vh;
             color: #CEEEFD;
             font-weight: bolder;
             font-size: 15px;
@@ -82,14 +81,14 @@
            font-size: 40px;
         }
         .primeira-section-title > span {
-            margin-top: 15px;
+            margin-top: 20px;
             width: 100px;
             background-color: #CEEEFD;
             border: 3px solid #CEEEFD;
         }
 
         .primeira-section-title > p {
-            margin-top: 30px;
+            margin-top: 20px;
             padding: 0px 40px;
         }
         .primeira-section-title > a {
@@ -101,11 +100,15 @@
             margin-top: 10px;
             font-size: 20px;
             border-radius: 8px;
-            margin-top: 100px;
+            margin-top: 90px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-decoration: none;
+        }
+        .primeira-section-title  a:hover {
+            padding: 40px;
+            transition: 1s;
         }
     }
         
