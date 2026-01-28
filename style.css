@@ -11,6 +11,10 @@
         }
 
         #nav-father {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
         background-color: #1B262C;
         display: flex;
         justify-content: space-between;
@@ -19,6 +23,7 @@
         }
 
         #nav-father h1 {
+        
         color: white;
         background-color: #1B262C;
         width: 140px;
@@ -45,7 +50,7 @@
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
         }
-
+        
         ul li {
         background-color: rgba(0, 0, 0, 0.726);
         color: aliceblue;
