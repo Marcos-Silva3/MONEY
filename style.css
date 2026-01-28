@@ -50,17 +50,22 @@
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
         }
-        
-        ul li {
-        background-color: rgba(0, 0, 0, 0.726);
-        color: aliceblue;
-        height: 31vh; 
-        font-weight: 900;
-        letter-spacing:1px;
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        #itens {
+            background-color: red;
+            margin-top: 64px;
+            position: fixed;
+            width: 100%;
+        }
+        #itens ul li {
+            background-color: rgba(0, 0, 0, 0.726);
+            color: aliceblue;
+            height: 31vh; 
+            font-weight: 900;
+            letter-spacing:1px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .primeira-section {
