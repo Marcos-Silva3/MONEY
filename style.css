@@ -51,7 +51,7 @@
         -webkit-font-smoothing: antialiased;
         }
         #itens {
-            background-color: red;
+            background-color: black;
             margin-top: 64px;
             position: fixed;
             width: 100%;
