@@ -52,7 +52,6 @@
         }
         #itens {
             background-color: black;
-            margin-top: 64px;
             position: fixed;
             width: 100%;
         }
@@ -75,7 +74,7 @@
         .primeira-section-title{
             background-color: #044b74;
             margin-top: 64px;
-            height: 90vh;
+            height: 100vh;
             font-size: 15px;
             color: #CEEEFD;
             font-weight: bolder;
@@ -89,22 +88,18 @@
            font-size: 40px;
            text-align: center;
         }
-        .primeira-section-title > span {
-            
-            width: 100px;
-            background-color: #CEEEFD;
-            border: 3px solid #CEEEFD;
-        }
-
+        
         .primeira-section-title > p {
-            
             padding: 0px 40px;
+            margin-top: -40px;
         }
         .primeira-section-title > a {
             background-color: green;
             color: aliceblue;
             font-family: Arial, Helvetica, sans-serif;
             width: 180px;
+            height: 50px;
+            text-align: center;
             margin-top: 10px;
             font-size: 20px;
             border-radius: 8px;
@@ -113,9 +108,14 @@
             justify-content: center;
             text-decoration: none;
         }
-        .primeira-section-title  a:hover {
-            padding: 40px;
+        .primeira-section-title > a:hover {
+            
+           
+     
             transition: 0.5s;
+            color: green;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0);
         }
         .img {
             background-image: url(IMAGENS/mobile.jpg);
