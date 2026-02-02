@@ -4,18 +4,12 @@
     box-sizing: border-box;
 }
 @media screen and (max-width: 780px) {
-    header {
-        font-family: var(--fonte-title);
-        background-color: white;
-         
-        }
-
         #nav-father {
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        background-color: #1B262C;
+        background-color: #1b262c;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -51,7 +45,7 @@
         -webkit-font-smoothing: antialiased;
         }
         #itens {
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             position: fixed;
             width: 100%;
         }
@@ -68,7 +62,7 @@
         }
 
         .primeira-section {
-            height: 900px;
+            height: 1000px;
             font-family: Arial, Helvetica, sans-serif;
         }
         .primeira-section-title{
@@ -109,9 +103,6 @@
             text-decoration: none;
         }
         .primeira-section-title > a:hover {
-            
-           
-     
             transition: 0.5s;
             color: green;
             background-color: white;
@@ -127,7 +118,7 @@
             margin: 0;
         }
         .segunda-section {
-            height: 1100px;
+            height: 1225px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -208,5 +199,35 @@
         .sessao-text h3 {
             color: white;
         }
+        #container {
+            background-color: #045174;
+       
+            width: 100%;
+            margin-top: 30px;
+
+        }
+        #container img {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            display: block;
+            margin: auto;
+        }
+        .itens-footer {
+            background-color: #227faa;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        .itens-footer  > a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+       
+        }
+        
     }
         
