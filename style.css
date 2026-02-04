@@ -74,8 +74,8 @@
             font-weight: bolder;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
             align-items: center;
+            justify-content: first baseline;
         }
         .primeira-section-title > h1{
            color: #CEEEFD;
