@@ -5,6 +5,10 @@ function clickmenu () {
             itens.style.display='block' 
         }
         
+        
     }
 
+function clicar (){
     
+    window.location.reload(true)
+}

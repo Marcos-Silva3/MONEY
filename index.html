@@ -112,14 +112,16 @@
                     <!-- Desativa captcha -->
                     <input type="hidden" name="_captcha" value="false">
                     <!-- Redireciona após envio -->
-                    <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_next" value="https://http://127.0.0.1:5500">
                     <label>Nome</label>
                     <input type="text" name="nome" required>
                     <label>Email</label>
                     <input type="email" name="email" required>
                     <label>Mensagem</label>
                     <textarea name="mensagem" rows="5" required></textarea>
-                    <button type="submit">FALE CONOSCO</button>
+
+                    <button type="submit" onclick="clicar()" >FALE CONOSCO</button>
+                    
                 </form>
             </div>
         </div>
