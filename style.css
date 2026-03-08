@@ -4,17 +4,15 @@
     box-sizing: border-box;
 }
 @media screen and (max-width: 780px) {
-        /* Estilo Global */
 
 .nav {
   background-color: black;
-  height: 60px;
+  height: 50px;
   width: 100%;
   padding: 0px 30px;
-  
+  font-size: 20px;
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,7 +25,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.85);
-  z-index: -1;
+  
 }
 
 .conteudo {
@@ -78,11 +76,11 @@
 #nav-tittle {
   color: aliceblue;
   padding: 0px;
-  
 }
+
 .menu-icon {
-  width: 35px;
-  height: 48px;
+  width: 70px;
+  height: 44px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -92,7 +90,7 @@
 }
 
 .linha {
-  height: 4px;
+  height: 3px;
   width: 50px;
   background: aliceblue;
   border-radius: 2px;
@@ -106,7 +104,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgb(0, 0, 0);
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
   z-index: 2;
@@ -182,27 +180,27 @@
     text-align: center;
   }
         
-        .primeira-section-title > p {
+  .primeira-section-title > p {
             padding: 0px 40px;
             text-align: center;
             font-size: 2em;
 
-        }
-        .primeira-section-title > a {
-            background-color: green;
-            color: aliceblue;
-            font-family: Arial, Helvetica, sans-serif;
-            width: 180px;
-            height: 50px;
-            text-align: center;
-            margin-top: 10px;
-            font-size: 20px;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-decoration: none;
-        }
+  }
+  .primeira-section-title > a {
+    background-color: green;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+  }
         .primeira-section-title > a:hover {
             transition: 0.5s;
             color: green;
@@ -375,47 +373,73 @@
         }
 
         /*footer*/
-        .footer-container {
-            background-color: #227faa;
-            width: 100%;
-            height: 350px;
-        }
-        
-        .footer-container img {
-            height: 100px;
-            width: 100px;
-            padding: 10px;
-            display: block;
-            margin: auto;
-        }
-        .itens-footer {
-            background-color: #227faa;
-            padding: 20px;
-            width: 100%;
-            text-align: center;
-            color: white;
-        }
-        .itens-footer  > a {
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-            color: white;
-            font-size: larger;
-       
+
+        footer {
+          margin-top: 34px;
+          
         }
 
+      
+  .footer-container {
+    width: 100%;
+    height: 236px;
+    z-index: -1;
+    background-color: #227faa;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .itens-footer {
+    background-color: #227faa;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .itens-footer  > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+  }
+
         /*Medias*/
-        .medias {
-            display: flex;
-            justify-content:center ;
-            align-items: center;
-            height: 40px;
-            
-        }
-        .medias div {
-            padding: 20px;
-            font-size: 20px;
-            color: aliceblue;
-        }
+  .medias{
+    display: flex;
+    justify-content:center ;
+    align-items: center;       
+  }
+
+  .medias div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    font-size: 15px;
+    justify-content: center;
+    color: aliceblue;
+    display: flex;
+  }
+  footer p {
+    background-color:#227FAA;
+    text-align: center;
+    padding: 20px 0px;
+    color: aliceblue;
+  }
+
+  footer p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+  }
+
+  footer p a:hover {
+    font-weight: bolder;
+    color: rgb(19, 3, 113);
+    transition: 1s;
+  }
 }
-        
