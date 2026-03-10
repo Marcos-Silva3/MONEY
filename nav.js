@@ -8,7 +8,6 @@ function clickmenu () {
         
     }
 
-function clicar (){
-    
+function clicar (){ 
     window.location.reload(true)
 }
