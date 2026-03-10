@@ -8,6 +8,7 @@ function clickmenu () {
         
     }
 
-function clicar (){ 
-    window.location.reload(true)
+function clicar () {
+    alert("Sua mensagem foi enviada !")   
 }
+
