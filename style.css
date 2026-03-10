@@ -6,7 +6,7 @@
 @media screen and (max-width: 780px) {
 
 .nav {
-  background-color: black;
+  background-color: #1B262C;
   height: 50px;
   width: 100%;
   padding: 0px 30px;
@@ -104,7 +104,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
+  background: #1B262C;
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
   z-index: 2;
@@ -272,26 +272,24 @@
             align-items: center;
         }
         .sub-sessoes {
-            background-color: black;
+            background-color: #1B262C;
             width: 400px;
             margin-top: 25px;
-            border-radius: 12px;
+            border-radius: 20px 20px 0px 0px ;
             padding-bottom: 15px;
         }
         .sub-sessoes img {
-            height: 180px;
             width: 100%;
             border-radius: 15px 15px 0px 0px;
-            background-image: url();
-            background-color: red;
         }
+    
         .sessao-text {
-            margin-top: 30px;
-            box-sizing: border-box;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
             justify-content: center;
+            box-sizing: border-box;
+            margin-top: 30px;
             padding: 0px 20px;
         }
         .sessao-text p {
@@ -315,7 +313,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: red;
         }
 
         .form h2 {
@@ -380,7 +377,7 @@
   .footer-container {
     width: 100%;
     height: 236px;
-    background-color: #227faa;
+    background-color: #1B262C;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -388,7 +385,7 @@
     align-items: center;
   }
   .itens-footer {
-    background-color: #227faa;
+    background-color: #1B262C;
     padding: 20px;
     width: 100%;
     text-align: center;
@@ -421,7 +418,7 @@
     display: flex;
   }
   footer p {
-    background-color:#227FAA;
+    background-color:#1B262C;
     text-align: center;
     padding: 20px 0px;
     color: aliceblue;
