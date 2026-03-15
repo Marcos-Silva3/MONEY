@@ -1,180 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="IMAGENS/favicon-32x32.png" type="image/x-icon">
-    <title>Money</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="IMAGENS/favicon-32x32.png">
+
+<title>Money</title>
 </head>
-<body id="inicio">
-    <div class="nav" id="nav">
-        <div class="menu-hamburguer" >
-          <input type="checkbox" id="menu-toggle" />
-          <label for="menu-toggle" class="menu-icon">
-            <div class="linha"></div>
-            <div class="linha"></div>
-            <div class="linha"></div>
-          </label>
-          <div class="overlay">
-            <nav class="menu">
-              <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#contato">CONTATO</a></li>
-                <li><a href="#servicos">SERVIÇOS</a></li>
-                <li><a href="#formulario">FORMULÁRIO</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div id="inicio">
-            <h2 class="nav-tittle" id="nav-tittle">MONEY</h2>
-        </div>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+<div class="logo">
+<h2>MONEY</h2>
+</div>
+
+
+
+<nav class="menu">
+    <ul>
+        <li>
+            <a href="#inicio">Início</a>
+        </li>
+        <li>
+            <a href="#servicos">Serviços</a>
+        </li>
+        <li>
+            <a href="#formulario">Contato</a>
+        </li>
+    </ul>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+
+<div class="hero-text">
+
+<h1>MONEY SOLUÇÕES FINANCEIRAS</h1>
+
+<p>
+Inteligência financeira, crédito especializado e soluções reais
+para pessoas e empresas.
+</p>
+
+<a
+class="btn"
+target="_blank"
+href="https://wa.me/559191188724?text=Olá, gostaria de obter mais informações sobre os serviços oferecidos pela Money.">
+Fale Conosco
+</a>
+
+</div>
+
+</section>
+
+
+<!-- IMAGEM -->
+<section class="banner"></section>
+
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="servicos">
+
+<div class="titulo">
+<h2>Serviços</h2>
+<div class="decoracao"></div>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="IMAGENS/img1.png" alt="">
+<h3>Limpa Nome</h3>
+<p>
+Negociação e regularização de dívidas para recuperar crédito.
+</p>
+</div>
+
+
+<div class="card">
+<img src="IMAGENS/img2.png" alt="">
+<h3>Automação Comercial</h3>
+<p>
+Controle de estoque, fluxo de caixa e emissão fiscal em um único sistema.
+</p>
+</div>
+
+
+<div class="card">
+<img src="IMAGENS/img3.png" alt="">
+<h3>Consultoria Empresarial</h3>
+<p>
+Consultoria estratégica para empresas e empreendedores.
+</p>
+</div>
+
+
+<div class="card">
+<img src="IMAGENS/img4.png" alt="">
+<h3>Palestras</h3>
+<p>
+Treinamentos em finanças, vendas e gestão de pessoas.
+</p>
+</div>
+
+
+<div class="card">
+<img src="IMAGENS/img5.png" alt="">
+<h3>Projetos</h3>
+<p>
+Planejamento estratégico e estudos de viabilidade.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FORMULÁRIO -->
+<section id="formulario" class="contato">
+
+<h2>Contato</h2>
+
+<form action="https://formsubmit.co/marcos.pinheiiro@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<label>Nome</label>
+<input type="text" name="nome" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Mensagem</label>
+<textarea name="mensagem" rows="5" required></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="social">
+
+        <a href="https://www.instagram.com/moneysolucoes_">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="#">
+            <ion-icon name="logo-google"></ion-icon>
+        </a>
+
+        <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+
     </div>
-   <section class="primeira-section" id="primeira-section">
-        <div class="primeira-section-title" id="contato">
-            <h1>
-                MONEY SOLUÇÕES FINANCEIRAS
-            </h1> 
-            <p>
-                INTELIGÊNCIA FINANCEIRA, CRÉDITO ESPECIALIZADO E SOLUÇÕES    REAIS PARA PESSOAS E EMPRESAS.
-            </p>
-            <a target="_blank" href="https://wa.me/559191188724?text=Olá, gostaria de obter mais informações sobre os serviços oferecidos pela Money.">
-                FALE CONOSCO
-            </a>
-        </div>
-        <div class="img" id="img">
-        </div>
-        <div class="segunda-section" id="servicos">
-            <div  class="segunda-section-title">
-                <h2>SERVIÇOS</h2>
-                <div class="pl">
-                    <span class="circulo" id="circulo"></span>
-                    <span class="linha" id="linha"></span>
-                </div>
-            </div>
-            <div class="sessoes" id="serviços">
-                <div class="sub-sessoes">
-                    <img src="IMAGENS/img1.png" alt="homem de terno azul escuro, sentado mexendo no notbook">
-                    <div class="sessao-text">
-                        <p>Limpa Nome</p>
-                        <h3>Serviço especializado em negociação, regularização e quitação de dívidas, pensado para quem deseja voltar a ter tranquilidade e acesso ao crédito.</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="sessoes" id="sessoes">
-                <div class="sub-sessoes">
-                    <img src="IMAGENS/img2.png" alt="" >
-                    <div class="sessao-text">
-                        <p>Automação Comercial</p>
-                        <h3>Com nossa solução de automação comercial, você pode:
-                            Gerenciar estoque com precisão
-                            Controlar lançamentos financeiros e fluxo de caixa
-                            Realizar vendas e serviços de forma simples e organizada
-                            Emitir documentos fiscais com agilidade (NFe, NFS-e, CT-e)
-                            Integrar toda a operação em um único sistema inteligente
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="sessoes" id="sessoes">
-                <div class="sub-sessoes">
-                    <img src="IMAGENS/img3.png" alt="">
-                    <div class="sessao-text">
-                        <p>Consultoria Empresarial</p>
-                        <h3>A Money oferece um braço especializado de consultoria para empresas, associações, MEIs, cooperativas e projetos:</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="sessoes" id="sessoes">
-                <div class="sub-sessoes">
-                    <img src="IMAGENS/img4.png" alt="">
-                    <div class="sessao-text">
-                        <p>Palestras e Treinamentos</p>
-                        <h3>Palestras de finanças, eSocial, Simples Nacional, vendas, gestão de pessoas e empreendedorismo
-                        Treinamentos técnicos e motivacionais
-                        Workshops corporativos e educacionais
-                    </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="sessoes" id="sessoes">
-                <div class="sub-sessoes">
-                    <img src="IMAGENS/img5.png" alt="">
-                    <div class="sessao-text">
-                        <p>Projetos, Diagnósticos e Assessoria Completa</p>
-                        <h3>Diagnóstico econômico-financeiro Planos de ação e planejamento estratégico
-                        Projetos para captação de recursos
-                        Modelagem de negócios
-                        Estudos de viabilidade para empreendimentos diversos.
-                    </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="formulario">
 
-        </div>
-        <div class="container" id="container">
-            <div id="form" class="form">
-                <h2>CONTATO</h2>
-                <div class="pl">
-                    <span class="circulo"></span>
-                    <span class="linha"></span>
-                </div>
-                <form action="https://formsubmit.co/marcos.pinheiiro@gmail.com" method="POST">
-                    <!-- Desativa captcha -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- Redireciona após envio -->
-                    <input type="hidden" name="_next" value="https://http://127.0.0.1:5500">
-                    <label>Nome</label>
-                    <input type="text" name="nome" required>
-                    <label>Email</label>
-                    <input type="email" name="email" required>
-                    <label>Mensagem</label>
-                    <textarea name="mensagem" rows="5" required></textarea>
+<p>© 2026 Money — Desenvolvido por
+    <a href="https://wa.me/5591982397142"><strong>Marcos Pinheiro</strong><a>
+</p>
 
-                    <button type="submit" onclick="clicar()" >FALE CONOSCO</button>
-                    
-                </form>
-            </div>
-        </div>
+</footer>
 
-        <!--Informações-->
-        <footer>
-            <div class="footer-container" id="container">
-                <div class="itens-footer">
-                    <a href="#servicos">Serviços</a>
-                </div>
-                <div class="itens-footer">
-                    <a href="#contato">Contato</a>
-                </div>
-                <div class="medias" id="medias">
-                    <a href="https://www.instagram.com/moneysolucoes_?igsh=MWNoZ2EzMGhvNzdicQ%3D%3D" target="_blank">
-                        <div>
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <ion-icon name="logo-google"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </div>
-                    </a>
-                </div>    
-            </div>
-            <p>Direitos autorais © 2026 Todos os direitos reservados - Money - 
-                Desenvolvido por <a href="https://wa.me/5591982397142?text=Olá, gostaria de falar com o Marcos.">Marcos Pinheiro</a></p>
-            <a href="#" class="bottom"></a>    
-        </footer>
-
-   </section>
-</body>
 <script src="nav.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script type="module"
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+<script nomodule
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
 </html>
