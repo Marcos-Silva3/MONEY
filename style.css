@@ -72,13 +72,6 @@ border-radius:6px;
 text-decoration:none;
 }
 
-/* BANNER */
-
-.banner{
-height:400px;
-background:url(IMAGENS/mobile.jpg) center/cover no-repeat;
-}
-
 /* SERVIÇOS */
 
 .servicos{
@@ -312,13 +305,6 @@ text-decoration: none;
   text-decoration:none;
 }
 
-/* BANNER */
-
-.banner{
-  height:400px;
-  background:url(IMAGENS/mobile.jpg) center/cover no-repeat;
-}
-
 /* SERVIÇOS */
 
 .servicos{
@@ -523,24 +509,39 @@ text-decoration: none;
 /* HERO */
 
 .hero{
-  height:100vh;
+  height:95vh;
+  margin-top: 60px;
   background:#044b74;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
   color:#CEEEFD;
-  padding:20px;
+  background-image: url(IMAGENS/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  height: 100%;
 }
 
 .hero h1{
-  font-size:38px;
+  font-size:60px;
   margin-bottom:20px;
+  color: white;
 }
 
 .hero p{
-  max-width:600px;
-  margin-bottom:30px;
+  color: #ffffff;
+  max-width: 600px;
+  margin-bottom: 30px;
+  font-size: 29px;
 }
 
 .btn{
@@ -549,13 +550,16 @@ text-decoration: none;
   padding:12px 25px;
   border-radius:6px;
   text-decoration:none;
+  transition: 1s;  
 }
 
-/* BANNER */
-
-.banner{
-  height:400px;
-  background:url(IMAGENS/mobile.jpg) center/cover no-repeat;
+.btn:hover {
+  background:rgb(255, 255, 255);
+  color:green;
+  margin-top: -15px;
+  border-radius:6px;
+  transition: 0.5s;
+  text-decoration:none; 
 }
 
 /* SERVIÇOS */
