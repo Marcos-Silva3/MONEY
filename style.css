@@ -44,32 +44,53 @@ text-decoration:none;
 /* HERO */
 
 .hero{
-height:100vh;
-background:#044b74;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:#CEEEFD;
-padding:20px;
+  height:95vh;
+  margin-top: 60px;
+  background:#044b74;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#CEEEFD;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  height: 100%;
 }
 
 .hero h1{
-font-size:38px;
-margin-bottom:20px;
+  font-size:60px;
+  margin-bottom:20px;
+  color: white;
 }
 
 .hero p{
-max-width:600px;
-margin-bottom:30px;
+  color: #ffffff;
+  max-width: 600px;
+  margin-bottom: 30px;
+  font-size: 29px;
 }
 
 .btn{
-background:green;
-color:white;
-padding:12px 25px;
-border-radius:6px;
-text-decoration:none;
+  background:green;
+  color:white;
+  padding:12px 25px;
+  border-radius:6px;
+  text-decoration:none;
+  transition: 1s;  
+}
+
+.btn:hover {
+  background:rgb(255, 255, 255);
+  color:green;
+  margin-top: -15px;
+  border-radius:6px;
+  transition: 0.5s;
+  text-decoration:none; 
 }
 
 /* SERVIÇOS */
@@ -277,24 +298,39 @@ text-decoration: none;
 /* HERO */
 
 .hero{
-  height:100vh;
+  height:95vh;
+  margin-top: 60px;
   background:#044b74;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
   color:#CEEEFD;
-  padding:20px;
+  background-image: url(IMAGENS/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  height: 100%;
 }
 
 .hero h1{
-  font-size:38px;
+  font-size:60px;
   margin-bottom:20px;
+  color: white;
 }
 
 .hero p{
-  max-width:600px;
-  margin-bottom:30px;
+  color: #ffffff;
+  max-width: 600px;
+  margin-bottom: 30px;
+  font-size: 29px;
 }
 
 .btn{
@@ -303,6 +339,16 @@ text-decoration: none;
   padding:12px 25px;
   border-radius:6px;
   text-decoration:none;
+  transition: 1s;  
+}
+
+.btn:hover {
+  background:rgb(255, 255, 255);
+  color:green;
+  margin-top: -15px;
+  border-radius:6px;
+  transition: 0.5s;
+  text-decoration:none; 
 }
 
 /* SERVIÇOS */
@@ -341,7 +387,7 @@ text-decoration: none;
 
 .card img{
   width:100%;
-  height: 65%;
+  height: 60%;
 }
 
 .card h3{
@@ -353,7 +399,8 @@ text-decoration: none;
   font-size:14px;
 }
 
-/* CONTATO */
+
+
 
 .contato{
   padding:70px 20px;
@@ -598,7 +645,7 @@ text-decoration: none;
 
 .card img{
   width:100%;
-  height: 65%;
+  height: 60%;
 }
 
 .card h3{
@@ -609,6 +656,64 @@ text-decoration: none;
   margin:0 15px 20px;
   font-size:14px;
 }
+
+/*Catálagos*/
+.catalagos {
+  height: 95vh;
+  background-color: red;
+}
+
+.container-cards {
+  background-color: blueviolet;
+  height: 100%;
+  padding: 12px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.bloco-cards {
+  text-align: center;
+  background-color: black;
+  margin: 10px;
+  height: 50%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  border-radius: 12px 12px 12px 12px;
+  font-family: Arial, Helvetica, sans-serif;font-weight: bold;
+ 
+}
+.bloco-cards:hover {
+  text-align: center;
+  background-color: black;
+  margin: 10px;
+  height: 52%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  border-radius: 12px 12px 12px 12px;
+  transition: 1s;
+}
+
+.bloco-cards a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: red;
+  color: aliceblue;
+  width: 100vw;
+  height: 5vh;
+  border-radius: 0px 0px 10px 10px;
+}
+/* CONTATO */
 
 /* CONTATO */
 
