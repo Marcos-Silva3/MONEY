@@ -104,8 +104,7 @@ body{
 
 .cards{
   display:grid;
-  grid-template-columns:1fr;
-  gap:30px;
+  gap:40px;
   max-width:1100px;
   margin:auto;
 }
@@ -117,7 +116,7 @@ body{
   overflow:hidden;
   text-align:center;
   flex-wrap: wrap;
-  display: flex;
+  justify-content: center;
 }
 
 .card img{
@@ -126,6 +125,7 @@ body{
 }
 
 .card h3{
+  text-align: center;
   margin:15px;
 }
 
@@ -139,38 +139,61 @@ body{
 
 .catalogos{
   padding:50px 20px;
-  height: 96vh;
-background-color: rgb(231, 231, 231);
-display: flex;
-justify-content: center;
+  background-color: rgb(231, 231, 231);
 }
 
 .container-cards{
   display:flex;
-  flex-wrap:wrap;
   justify-content:center;
-  gap:20px;
-  height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:60px;
+ 
+  width: 100%;
 }
 
+
 .bloco-cards{
-  height:100%x;
+  height:350px;
   width:100%;
   max-width:250px;
   background:black;
   border-radius:10px;
   display:flex;
   align-items:flex-end;
+  box-shadow: 0px 00px 20px black;
+}
+
+.bloco-cards:hover{
+  padding: 10px;
+  width:100%;
+  background:black;
+  border-radius:10px;
+  display:flex;
+  align-items:flex-end;
+  transition: 0.5s;  
 }
 
 .bloco-cards a{
+  background:#466372;
   width:100%;
+  padding:10px;
+  border-radius:0 0 10px 10px;
   text-align:center;
-padding:10px;
-background:red;
-color:white;
-text-decoration:none;
-border-radius:0 0 10px 10px;
+  color:white;
+  text-decoration:none;
+}
+
+.bloco-cards a:hover{
+  background:aliceblue;
+  width:100%;
+  padding:10px;
+  border-radius:0 0 10px 10px;
+  text-align:center;
+  color:#1B262C;
+  text-decoration:none;
+  border-radius: 10px 10px 10px;
+  font-weight: bold;
 }
 
 
@@ -180,33 +203,39 @@ border-radius:0 0 10px 10px;
   padding:70px 20px;
   background:#f4f4f4;
   text-align:center;
+  height: 80vh;
 }
 
 .contato form{
-  max-width:500px;
   margin:auto;
   display:flex;
   flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 label{
   margin-top:15px;
+  
 }
 
 input, textarea{
   padding:10px;
   border-radius:5px;
   border:1px solid #ccc;
+  width: 600px;
 }
 
 button{
-  margin-top:20px;
+  margin-top:100px;
   padding:12px;
   background:#045174;
   color:white;
   border:none;
   border-radius:5px;
   cursor:pointer;
+  width: 600px;
 }
 
 
@@ -230,6 +259,13 @@ margin-bottom:15px;
   text-decoration:none;
 }
 
+/*MOBILE*/
+
+@media (min-width:600px){
+  .card {
+    width: 400px;
+  }
+}
 
 /* TABLET */
 
@@ -256,7 +292,7 @@ margin-bottom:15px;
   
   .hero{
     background-image:url(IMAGENS/bg.png);
-    background-size:cover;
+    background-size:cver;
     background-position:center;
   }
   
