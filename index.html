@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,148 +13,130 @@
     <body>
         
         <header class="navbar">
+            <h1 class="logo">MONEY</h1>
             
-            <div class="logo">
-                <h2>MONEY</h2>
-            </div>
-            
-            <nav class="menu">
-                <ul>
+            <nav>
+                <ul class="menu">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#formulario">Contato</a></li>
                 </ul>
             </nav>
-            
         </header>
         
-        
-        <section id="inicio" class="hero">
+        <main>
             
-            <div class="hero-text">
-                
-                <h1>MONEY SOLUÇÕES FINANCEIRAS</h1>
-                
-                <p>
-                    Inteligência financeira, crédito especializado e soluções reais
-                    para pessoas e empresas.
-                </p>
-                
-                <a class="btn"
-                target="_blank"
-                href="https://wa.me/559191188724?text=Olá, gostaria de obter mais informações sobre os serviços oferecidos pela Money.">
-                Fale Conosco
-            </a>
-            
-        </div>
-        
-    </section>
-    
-    
-    <section id="servicos" class="servicos">
-        
-        <div class="titulo">
-            <h2>Serviços</h2>
-            <div class="decoracao"></div>
-        </div>
-        
-        <div class="cards">
-            
-            <div class="card">
-                <img src="IMAGENS/img1.png" alt="Limpa Nome">
-                <h3>Limpa Nome</h3>
-                <p>Negociação e regularização de dívidas para recuperar crédito.</p>
-            </div>
-            
-            <div class="card">
-                <img src="IMAGENS/img2.png" alt="Automação Comercial">
-                <h3>Automação Comercial</h3>
-                <p>Controle de estoque, fluxo de caixa e emissão fiscal.</p>
-            </div>
-            
-<div class="card">
-    <img src="IMAGENS/img3.png" alt="Consultoria Empresarial">
-    <h3>Consultoria Empresarial</h3>
-    <p>Consultoria estratégica para empresas e empreendedores.</p>
-</div>
-
-<div class="card">
-<img src="IMAGENS/img4.png" alt="Palestras">
-<h3>Palestras</h3>
-<p>Treinamentos em finanças, vendas e gestão.</p>
-</div>
-
-<div class="card">
-    <img src="IMAGENS/img5.png" alt="Projetos">
-    <h3>Projetos</h3>
-    <p>Planejamento estratégico e estudos de viabilidade.</p>
-</div>
-
-</div>
-</section>
-
-
-<section class="catalogos">
-    
-    <div class="container-cards" id="img">
-        <div class="bloco-cards"><a href="#">Download</a></div>
-        <div class="bloco-cards"><a href="#">Download</a></div>
-        <div class="bloco-cards"><a href="#">Download</a></div>
-        <div class="bloco-cards"><a href="#">Download</a></div>
-        <div class="bloco-cards"><a href="#">Download</a></div>
-        
+            <!-- HERO -->
+            <section id="inicio" class="hero">
+                <div class="hero-text">
+                    <h2>MONEY SOLUÇÕES FINANCEIRAS</h2>
+                    
+                    <p>
+                        Inteligência financeira, crédito especializado e soluções reais
+                        para pessoas e empresas.
+                    </p>
+                    
+                    <a class="btn"
+                    target="_blank"
+                    href="https://wa.me/559191188724?text=Olá, gostaria de obter mais informações sobre os serviços oferecidos pela Money.">
+                    Fale Conosco
+                </a>
     </div>
-    
 </section>
 
+<!-- SERVIÇOS -->
+<section id="servicos" class="servicos">
+    <header class="titulo">
+        <h2>Serviços</h2>
 
-<section id="formulario" class="contato">
+    </header>
     
-    <h2>Contato</h2>
+    <div class="cards">
+        <article class="card">
+            <img src="IMAGENS/img1.png" alt="Limpa Nome">
+            <h3>Limpa Nome</h3>
+            <p>Negociação e regularização de dívidas para recuperar crédito.</p>
+        </article>
+        
+        <article class="card">
+            <img src="IMAGENS/img2.png" alt="Automação Comercial">
+            <h3>Automação Comercial</h3>
+            <p>Controle de estoque, fluxo de caixa e emissão fiscal.</p>
+        </article>
+        
+        <article class="card">
+            <img src="IMAGENS/img3.png" alt="Consultoria Empresarial">
+            <h3>Consultoria Empresarial</h3>
+            <p>Consultoria estratégica para empresas e empreendedores.</p>
+        </article>
+        
+        <article class="card">
+            <img src="IMAGENS/img4.png" alt="Palestras">
+            <h3>Palestras</h3>
+            <p>Treinamentos em finanças, vendas e gestão.</p>
+        </article>
+        
+        <article class="card">
+            <img src="IMAGENS/img5.png" alt="Projetos">
+            <h3>Projetos</h3>
+            <p>Planejamento estratégico e estudos de viabilidade.</p>
+        </article>
+    </div>
+</section>
+
+<!-- CATÁLOGOS -->
+<section class="catalogos" >
     
-    <form action="https://formsubmit.co/marcos.pinheiiro@gmail.com" method="POST">
-        
-        <input type="hidden" name="_captcha" value="false">
-        
-        <label>Nome</label>
-        <input type="text" name="nome" required>
-        
-        <label>Email</label>
-        <input type="email" name="email" required>
-        
-        <label>Mensagem</label>
-        <textarea name="mensagem" rows="5" required></textarea>
-        
-        <button type="submit">Enviar</button>
-        
+    <div class="container-cards" >
+      <div class="bloco-cards"><a href="#">Download</a></div>
+      <div class="bloco-cards"><a href="#">Download</a></div>
+      <div class="bloco-cards"><a href="#">Download</a></div>
+      <div class="bloco-cards"><a href="#">Download</a></div>
+      <div class="bloco-cards"><a href="#">Download</a></div>
+    </div>
+</section>
+
+  <!-- CONTATO -->
+  <section id="formulario" class="contato">
+      <h2>Contato</h2>
+
+      <form action="https://formsubmit.co/marcos.pinheiiro@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" name="nome" required>
+      
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required>
+      
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      
+      <button type="submit">Enviar</button>
     </form>
-    
 </section>
 
+</main>
 
 <footer class="footer">
-    
     <div class="social">
-        
         <a href="https://www.instagram.com/moneysolucoes_" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
         </a>
         
-        <a href="mailto:moneysolucoes123@gmail.com" target="_blank">
+        <a href="mailto:moneysolucoes123@gmail.com">
             <ion-icon name="logo-google"></ion-icon>
         </a>
         
         <a href="#">
             <ion-icon name="logo-facebook"></ion-icon>
         </a>
-        
     </div>
     
     <p>
         © 2026 Money — Desenvolvido por
         <a href="https://wa.me/5591982397142"><strong>Marcos Pinheiro</strong></a>
     </p>
-    
 </footer>
 
 <script src="nav.js"></script>
