@@ -90,7 +90,7 @@ body {
 
 /* SERVIÇOS */
 .servicos {
-  padding: 70px 20px;
+  padding: 70px 0px;
   background-color: red;
 
 }
@@ -121,8 +121,8 @@ body {
   flex-direction: column;
   color: white;
   border-radius: 10px;
-  width: 350px;
-  text-align: center;
+  width: 450px;
+  align-items: center;
   height: 460px;
 }
 
@@ -245,13 +245,15 @@ button {
 /* RESPONSIVO */
 @media (max-width: 600px) {
 
-.menu a {
+  .menu a {
   color: white;
   text-decoration: none;
   margin: 0;
  }
+ 
   .cards {
     grid-template-columns: repeat(1, 2fr);
+    width: 100%;
   }
 
   .hero h2 {
@@ -272,7 +274,8 @@ button {
 
   .card {
     border-radius: 10px;
-    width: 80%;    
+    width: 90%;    
+
   }
 }
 
