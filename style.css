@@ -49,6 +49,10 @@ body {
   text-align: center;
   color: white;
   padding: 20px;
+  background-image: url(IMAGENS/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .hero-text {
@@ -56,6 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .hero h2 {
@@ -221,7 +226,9 @@ button {
     height: auto;
     padding: 10px;
   }
-
+  .hero {
+    background-image: none;
+  }
   .hero h2 {
     font-size: 2rem;
   }
