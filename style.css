@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +21,6 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 0 25px;
- 
 }
 
 .logo {
@@ -31,18 +31,16 @@ body {
   display: flex;
   list-style: none;
   gap: 20px;
-  
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  margin: 40px;
 }
 
 /* HERO */
 .hero {
-  height: 95vh;
+  min-height: 100vh;
   margin-top: 60px;
   background: #044b74;
   display: flex;
@@ -51,27 +49,22 @@ body {
   text-align: center;
   color: white;
   padding: 20px;
-  margin-top: 58px;
 }
 
 .hero-text {
-    max-width: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    height: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
@@ -91,14 +84,12 @@ body {
 
 /* SERVIÇOS */
 .servicos {
-  
-  padding: 70px 0px;
+  padding: 70px 20px;
 }
 
 .titulo {
   text-align: center;
   margin-bottom: 40px;
-  
 }
 
 .decoracao {
@@ -108,72 +99,52 @@ body {
   margin: 10px auto;
 }
 
+/* GRID moderno */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
 .card {
   background: #1B262C;
-  display: flex;
-  flex-direction: column;
   color: white;
   border-radius: 10px;
-  width: 380px;
-  align-items: center;
-  height: 480px;
-  border-radius: 9px 9px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .card img {
   width: 100%;
-  height: 350px;
-  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .card h3 {
-  padding:7px 20px;
-  padding-top: 15px;
+  padding: 15px;
 }
 
 .card p {
   font-size: 14px;
- text-align: center;
-  
+  padding: 0 15px 20px;
 }
 
 /* CATÁLOGOS */
 .catalogos {
-  padding: 70px 20px;
   background: #e7e7e7;
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
-
-.catalogos h3 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    text-align: center;
+  padding: 70px 20px;
+  text-align: center;
 }
 
 .container-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
+  margin-top: 20px;
 }
 
 .bloco-cards {
-  height: 350px;
-  width: 250px;
-  max-width: 250px;
+  height: 300px;
   background: black;
   border-radius: 10px;
   display: flex;
@@ -189,7 +160,6 @@ body {
   background: #466372;
   width: 100%;
   padding: 10px;
-  text-align: center;
   color: white;
   text-decoration: none;
   border-radius: 0 0 10px 10px;
@@ -198,7 +168,6 @@ body {
 .bloco-cards a:hover {
   background: white;
   color: #1B262C;
-  font-weight: bold;
 }
 
 /* CONTATO */
@@ -206,30 +175,17 @@ body {
   padding: 70px 20px;
   background: #f4f4f4;
   text-align: center;
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .contato form {
-  height: 500px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 500px;
+  margin: auto;
 }
 
 input, textarea, button {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px;
-}
-
-label {
-
-  margin-top: 20px;
 }
 
 button {
@@ -259,91 +215,18 @@ button {
 }
 
 /* RESPONSIVO */
-@media (max-width: 600px) {
-
-  .menu a {
-  color: white;
-  text-decoration: none;
-  margin: 0;
- }
- 
-  .cards {
-    grid-template-columns: repeat(1, 2fr);
-    width: 100%;
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
   }
 
   .hero h2 {
-    font-size: 50px;
+    font-size: 2rem;
   }
 
   .hero p {
-    font-size: 24px;
+    font-size: 1rem;
   }
-  
-  .cards img {
-    border-radius: 10px 10px 0px 0px;
-  }
-  .cards {
-    width: 100%;
-  }
-
-  .card {
-    border-radius: 10px;
-    text-align: center;
-  }
-}
-
-
-
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  .hero {
-    background-image: url(IMAGENS/bg.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-    height: 100%;
-}
-  
-  .catalogos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 70px 20px;
-    background: #e7e7e7;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-  .catalogos {
-    height: 98vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  
-  .contato form {
-  height: 500px;
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 }
