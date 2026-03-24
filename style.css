@@ -75,22 +75,31 @@ body {
 }
 
 .btn {
-  background: green;
+  background: #008000;
+  width: 200px;
   color: white;
   padding: 12px 25px;
   border-radius: 6px;
   text-decoration: none;
-  transition: 0.3s;
+  animation: animate-outline 1s ease-out infinite;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background: white;
-  color: green;
+
+@keyframes animate-outline {
+  from {
+    outline: 0px solid #008000 ;
+  }
+  to {
+    outline: 15px solid #00800024;
+  
+  }
 }
 
 /* SERVIÇOS */
 .servicos {
   padding: 70px 20px;
+  align-items: center;
 }
 
 .titulo {
@@ -156,6 +165,7 @@ body {
   display: flex;
   align-items: flex-end;
   transition: 0.3s;
+  box-shadow: 0px 0px 20px #000000;
 }
 
 .bloco-cards:hover {
@@ -238,3 +248,27 @@ button {
     font-size: 1rem;
   }
 }
+
+ @media (min-width: 1214px) {
+  .servicos {
+    height: 800px;
+  }
+  .cards {
+    height: 100%;
+    align-items: center;
+  }
+  .card {
+    height: 400px;
+    box-shadow: 0px 0px 20px #000000;
+  }
+  
+  .catalogos {
+    height: 800px;
+    padding: 70px 10px;
+  }
+  .container-cards {
+    height: 100%;
+    align-items: center;
+    
+  }
+ }
