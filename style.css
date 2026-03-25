@@ -156,7 +156,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
-  margin-top: 20px;
+  margin-top: 40px;
+  max-width: 700px;
+  margin: 40px auto;
 }
 
 .bloco-cards {
@@ -168,6 +170,7 @@ body {
   transition: 0.3s;
   box-shadow: 0px 0px 20px #000000;
 }
+
 
 .bloco-cards:hover {
   transform: scale(1.05);
@@ -248,11 +251,42 @@ button {
   .hero p {
     font-size: 1rem;
   }
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .bloco-cards {
+    flex: 1 1 500px;
+  }
+  .bloco-cards:nth-child(1)  {
+    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_catalogo_hospitality_FOOD_SERVICE_MI_001_d0ae84a3a0.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+  }
+  .bloco-cards:nth-child(2)  {
+    background-image: url(CATALOGOS/medium_Equipment_712d66e584.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .bloco-cards:nth-child(3)  {
+    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_Livro_Catalogo_FURNITURE_001_edd5e7db1a.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
 }
 
  @media (min-width: 1214px) {
   .servicos {
-    height: 800px;
+    max-height: 1100px;
   }
   .cards {
     height: 100%;
