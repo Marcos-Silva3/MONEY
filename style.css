@@ -6,8 +6,13 @@
   font-family: Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.5;
+  background: #f4f4f4;
 }
 
 /* NAVBAR */
@@ -15,107 +20,141 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
-  background: #1B262C;
+  z-index: 1000;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 25px;
+  flex-direction: row-reverse;
+
+  padding: 15px 25px;
+  background: #111;
+  color: #fff;
 }
 
 .logo {
-  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.menu {
-  display: flex;
+/* MENU */
+.nav-links {
   list-style: none;
+  display: flex;
   gap: 20px;
 }
 
-.menu a {
-  color: white;
+.nav-links li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.nav-links.active li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-links a {
+  color: #fff;
   text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* MENU HAMBURGUER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  margin: 4px;
+  background: #fff;
+  transition: 0.3s;
 }
 
 /* HERO */
 .hero {
   min-height: 100vh;
-  margin-top: 60px;
-  background: #044b74;
+  margin-top: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+
   padding: 20px;
-  background-image: url(IMAGENS/bg.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  color: #fff;
+
+  background: #044b74 url(IMAGENS/bg.png) center/cover no-repeat fixed;
 }
 
 .hero-text {
   max-width: 700px;
+  height: 500px;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
-  height: 500px;
+  align-items: center;
 }
 
 .hero h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 30px;
 }
 
+/* BOTÃO */
 .btn {
-  background: #008000;
   width: 200px;
-  color: white;
   padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  animation: animate-outline 1s ease-out infinite;
-  cursor: pointer;
-}
 
+  background: #008000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  animation: animate-outline 1s ease-out infinite;
+}
 
 @keyframes animate-outline {
   from {
-    outline: 0px solid #008000 ;
+    outline: 0 solid #008000;
   }
   to {
     outline: 15px solid #00800024;
-  
   }
 }
 
 /* SERVIÇOS */
 .servicos {
   padding: 70px 20px;
-  align-items: center;
+  text-align: center;
 }
 
 .titulo {
-  text-align: center;
   margin-bottom: 40px;
 }
 
 .decoracao {
   width: 120px;
   height: 3px;
-  background: #045174;
   margin: 10px auto;
+  background: #045174;
 }
 
-/* GRID moderno */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -124,7 +163,7 @@ body {
 
 .card {
   background: #1B262C;
-  color: white;
+  color: #fff;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
@@ -141,81 +180,82 @@ body {
 }
 
 .card p {
-  font-size: 14px;
   padding: 0 15px 20px;
+  font-size: 14px;
 }
 
 /* CATÁLOGOS */
 .catalogos {
-  background: #e7e7e7;
   padding: 70px 20px;
   text-align: center;
+  background: #e7e7e7;
 }
 
 .container-cards {
+  max-width: 700px;
+  margin: 40px auto;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
-  margin-top: 40px;
-  max-width: 700px;
-  margin: 40px auto;
 }
 
 .bloco-cards {
   height: 300px;
-  background: black;
-  border-radius: 10px;
+
   display: flex;
   align-items: flex-end;
-  transition: 0.3s;
-  box-shadow: 0px 0px 20px #000000;
-}
 
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 0 0 20px #000;
+  transition: 0.3s;
+}
 
 .bloco-cards:hover {
   transform: scale(1.05);
 }
 
 .bloco-cards a {
-  background: #466372;
   width: 100%;
   padding: 10px;
-  color: white;
+
+  background: #466372;
+  color: #fff;
   text-decoration: none;
+
   border-radius: 0 0 10px 10px;
 }
 
 .bloco-cards a:hover {
-  background: white;
+  background: #fff;
   color: #1B262C;
 }
-.bloco-cards:nth-child(1)  {
-    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_catalogo_hospitality_FOOD_SERVICE_MI_001_d0ae84a3a0.jpg);
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% 86%;
-    
-  }
-  .bloco-cards:nth-child(2)  {
-    background-image: url(CATALOGOS/medium_Equipment_712d66e584.jpg);
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% 86%;
-  }
-  .bloco-cards:nth-child(3)  {
-    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_Livro_Catalogo_FURNITURE_001_edd5e7db1a.jpg);
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% 86%;
-    
-  }
+
+/* BACKGROUNDS */
+.bloco-cards:nth-child(1),
+.bloco-cards:nth-child(2),
+.bloco-cards:nth-child(3) {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 86%;
+}
+
+.bloco-cards:nth-child(1) {
+  background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_catalogo_hospitality_FOOD_SERVICE_MI_001_d0ae84a3a0.jpg);
+}
+
+.bloco-cards:nth-child(2) {
+  background-image: url(CATALOGOS/medium_Equipment_712d66e584.jpg);
+}
+
+.bloco-cards:nth-child(3) {
+  background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_Livro_Catalogo_FURNITURE_001_edd5e7db1a.jpg);
+}
+
 /* CONTATO */
 .contato {
   padding: 70px 20px;
-  background: #f4f4f4;
   text-align: center;
 }
 
@@ -224,7 +264,9 @@ body {
   margin: auto;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   width: 100%;
   margin-top: 15px;
   padding: 10px;
@@ -232,17 +274,17 @@ input, textarea, button {
 
 button {
   background: #045174;
-  color: white;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
 
 /* FOOTER */
 .footer {
-  background: #1B262C;
-  color: white;
-  text-align: center;
   padding: 30px;
+  text-align: center;
+  color: #fff;
+  background: #1B262C;
 }
 
 .social {
@@ -251,22 +293,55 @@ button {
 }
 
 .social a {
-  color: white;
   margin: 0 10px;
+  color: #fff;
   text-decoration: none;
 }
 
 /* RESPONSIVO */
+@media (max-width: 1024px) {
+  .nav-links {
+    position: fixed;
+    inset: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background: #111;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-links a {
+    font-size: 24px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1100;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
-    height: auto;
     padding: 10px;
+    flex-direction: row;
   }
+
   .hero {
     background-image: none;
   }
-  .hefro h2 {
+
+  .hero h2 {
     font-size: 2rem;
   }
 
@@ -274,59 +349,25 @@ button {
     font-size: 1rem;
   }
 
-  
   .container-cards {
     display: flex;
     flex-direction: column;
     max-width: 80%;
   }
+
   .bloco-cards {
     flex: 1 1 500px;
-  }
-  .bloco-cards:nth-child(1)  {
-    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_catalogo_hospitality_FOOD_SERVICE_MI_001_d0ae84a3a0.jpg);
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-  }
-  .bloco-cards:nth-child(2)  {
-    background-image: url(CATALOGOS/medium_Equipment_712d66e584.jpg);
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  .bloco-cards:nth-child(3)  {
-    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_Livro_Catalogo_FURNITURE_001_edd5e7db1a.jpg);
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  
 }
 
- @media (min-width: 1214px) {
+@media (min-width: 1214px) {
   .servicos {
     max-height: 1100px;
   }
-  .cards {
-    height: 100%;
-    align-items: center;
-  }
+
   .card {
     height: 400px;
-    box-shadow: 0px 0px 20px #000000;
+    box-shadow: 0 0 20px #000;
   }
-  
-  .catalogos {
-    padding: 70px 10px;
-  }
-  .container-cards {
-    height: 100%;
-    align-items: center;
-    
-  }
- }
+}
