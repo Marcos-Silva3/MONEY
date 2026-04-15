@@ -189,7 +189,29 @@ body {
   background: white;
   color: #1B262C;
 }
-
+.bloco-cards:nth-child(1)  {
+    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_catalogo_hospitality_FOOD_SERVICE_MI_001_d0ae84a3a0.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 86%;
+    
+  }
+  .bloco-cards:nth-child(2)  {
+    background-image: url(CATALOGOS/medium_Equipment_712d66e584.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 86%;
+  }
+  .bloco-cards:nth-child(3)  {
+    background-image: url(CATALOGOS/medium_AF_DIGITAL_2024_maio_Livro_Catalogo_FURNITURE_001_edd5e7db1a.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 86%;
+    
+  }
 /* CONTATO */
 .contato {
   padding: 70px 20px;
@@ -244,13 +266,15 @@ button {
   .hero {
     background-image: none;
   }
-  .hero h2 {
+  .hefro h2 {
     font-size: 2rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
+
+  
   .container-cards {
     display: flex;
     flex-direction: column;
