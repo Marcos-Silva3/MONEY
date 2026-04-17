@@ -45,7 +45,7 @@ body {
 }
 
 .nav-links li {
-  opacity: 0;
+  
   transform: translateY(20px);
   transition: 0.3s;
 }
@@ -238,7 +238,7 @@ body {
 .bloco-cards:nth-child(3) {
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100% 86%;
+  background-size: 100% 92%;
 }
 
 .bloco-cards:nth-child(1) {
@@ -333,8 +333,13 @@ button {
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px;
-    flex-direction: row;
+    padding: 15px 35px;
+  }
+
+  .logo {
+    font-family:fantasy;
+    font-size: 30px;
+    letter-spacing: 5px;
   }
 
   .hero {
