@@ -340,8 +340,8 @@ button {
     z-index: 1100;
   }
   .footer > p > a {
-  text-decoration: none;
-  color: aliceblue;
+    text-decoration: none;
+    color: aliceblue;
 }
 }
 
