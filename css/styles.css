@@ -201,7 +201,6 @@ button {
   gap: 10px;
   color: var(--white);
   flex-shrink: 0;
-  flex-direction: row;
 }
 
 .logo__icon {
@@ -222,12 +221,12 @@ button {
 }
 
 .logo__text strong {
-  font-size: 35px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .logo__text small {
-  font-size: 0.90rem;
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
   opacity: 0.85;
   font-weight: 500;
@@ -273,8 +272,8 @@ button {
 
 .nav-toggle span {
   display: block;
-  width: 35px;
-  height: 4px;
+  width: 24px;
+  height: 2px;
   background: var(--white);
   border-radius: 2px;
   transition: var(--transition);
@@ -1350,15 +1349,10 @@ button {
   .footer__grid {
     grid-template-columns: 1fr;
     text-align: center;
-    
   }
-
-  
-
 
   .footer__contact li {
     justify-content: center;
-    
   }
 
   .footer__social {
@@ -1388,8 +1382,7 @@ button {
 
 /* Nav toggle animation */
 .nav-toggle.is-active span:nth-child(1) {
-  
-  transform: rotate(46deg) translate(9px, 7px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .nav-toggle.is-active span:nth-child(2) {
