@@ -417,14 +417,50 @@
   <script src="js/main.js?v=1"></script>
   <script>
   if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("/sw.js")
-      .then(reg => console.log("Service Worker registrado:", reg.scope))
-      .catch(err => console.error("Erro ao registrar SW:", err));
-  });
-}
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then(reg => console.log("Service Worker registrado:", reg.scope))
+        .catch(err => console.error("Erro ao registrar SW:", err));
+    });
+  }
 </script>
-
+  <button id="installBtn" class="btn btn--navy" style="display:none; position:fixed; bottom:20px; right:20px; z-index:9999;">
+    <i class="fa-solid fa-download"></i>
+    Instalar App
+</button>
 </body>
+<script>
+let deferredPrompt;
+const installBtn = document.getElementById("installBtn");
+
+window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+
+    installBtn.style.display = "flex";
+    installBtn.style.alignItems = "center";
+    installBtn.style.gap = "8px";
+});
+
+installBtn.addEventListener("click", async () => {
+    if (!deferredPrompt) return;
+
+    deferredPrompt.prompt();
+
+    const { outcome } = await deferredPrompt.userChoice;
+
+    if (outcome === "accepted") {
+        console.log("PWA instalado");
+    }
+
+    deferredPrompt = null;
+    installBtn.style.display = "none";
+});
+
+window.addEventListener("appinstalled", () => {
+    installBtn.style.display = "none";
+    console.log("Aplicativo instalado com sucesso");
+});
+</script>
 </html>
