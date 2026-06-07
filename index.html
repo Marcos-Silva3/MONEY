@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css?v=1">
+  <link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -33,11 +34,10 @@
       <nav class="nav" id="nav">
         <ul class="nav__list">
           <li><a href="#inicio" class="nav__link nav__link--active">Início</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
           <li><a href="#catalogos" class="nav__link">Catálogos</a></li>
           <li><a href="#agendamento" class="nav__link">Agendamento</a></li>
           <li><a href="#calendario" class="nav__link">Calendário</a></li>
-          <li><a href="#contato" class="nav__link">Contato</a></li>
-          <li><a href="#sobre" class="nav__link">Sobre nós</a></li>
         </ul>
       </nav>
 
@@ -123,6 +123,56 @@
       </div>
     </section>
 
+    <!-- Serviços -->
+<section class="servicos section" id="servicos">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <span class="section-title__line" aria-hidden="true"></span>
+    </header>
+
+    <div class="servicos__grid">
+
+      <article class="servico-card">
+        <i class="fa-solid fa-credit-card"style="font-size: 2rem;"></i>
+        <h3>Crédito Consignado</h3>
+        <p>Oferecemos crédito consignado com as melhores taxas do mercado para servidores públicos, aposentados e pensionistas, garantindo segurança, rapidez e transparência em todo o processo.</p>
+      </article>
+
+      <article class="servico-card">
+        <i class="fa-solid fa-hand-holding-dollar"style="font-size: 2rem;"></i>
+        <h3>Crédito Pessoal</h3>
+        <p>Soluções de crédito flexíveis e adequadas ao perfil de cada cliente, com análise personalizada e contratos seguros.</p>
+      </article>
+
+      <article class="servico-card">
+        <i class="fa-solid fa-seedling"style="font-size: 2rem;"></i>
+        <h3>Crédito Rural</h3>
+        <p>Atendemos produtores rurais com linhas específicas para custeio, investimento, compra de equipamentos, financiamento agrícola e fortalecimento da atividade rural.</p>
+      </article>
+
+      <article class="servico-card">
+        <i class="fa-solid fa-briefcase"style="font-size: 2rem;"></i>
+        <h3>Capital de Giro</h3>
+        <p>Apoio financeiro para micro, pequenas e médias empresas que precisam ampliar operações, equilibrar fluxo de caixa ou investir em crescimento.  </p>
+      </article>
+
+      <article class="servico-card">
+        <i class="fa-solid fa-money-bill-transfer"style="font-size: 2rem;"></i>
+        <h3>FGTS – Saques e Antecipações</h3>
+        <p>Assessoria para antecipação de saque-aniversário, liberação de recursos e orientação completa para utilização estratégica do FGTS.</p>
+      </article>
+
+      <article class="servico-card">
+        <i class="fa-solid fa-house" style="font-size: 2rem;"></i>
+        <h3>Financiamento e Refinanciamento de Veículos e Imóveis</h3>
+        <p>Intermediação completa para financiamento e refinanciamento, com condições acessíveis e acompanhamento em todas as etapas.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
     <!-- Catálogos -->
     <section class="catalogos section" id="catalogos">
       <div class="container">
@@ -193,16 +243,6 @@
           <div class="calendar" id="calendar" aria-label="Calendário de agendamento"></div>
 
           <div class="pdf-upload">
-            <label class="pdf-upload__label" for="pdfAgendamento">
-              <svg class="pdf-upload__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="12" y1="18" x2="12" y2="12"/>
-                <line x1="9" y1="15" x2="15" y2="15"/>
-              </svg>
-              <span class="pdf-upload__title">Envie seus documentos (PDF)</span>
-              <span class="pdf-upload__hint">Arraste o arquivo aqui ou clique para selecionar · Máx. 10 MB</span>
-            </label>
             <input
               type="file"
               id="pdfAgendamento"
@@ -210,18 +250,6 @@
               accept="application/pdf,.pdf"
               hidden
             >
-            <div class="pdf-upload__preview" id="pdfPreview" hidden>
-              <span class="pdf-upload__file-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              </span>
-              <div class="pdf-upload__file-info">
-                <strong id="pdfFileName">documento.pdf</strong>
-                <span id="pdfFileSize">0 KB</span>
-              </div>
-              <button type="button" class="pdf-upload__remove" id="pdfRemove" aria-label="Remover arquivo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              </button>
-            </div>
             <p class="pdf-upload__error" id="pdfError" role="alert" hidden></p>
           </div>
 
@@ -315,9 +343,10 @@
       <div class="footer__brand" id="sobre">
         <a href="#inicio" class="logo logo--footer">
           <span class="logo__icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#fff"/><path d="M12 26c0-4 3-7 8-7s8 3 8 7" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="14" r="4" fill="#22c55e"/><path d="M16 22h8l-2 6h-4l-2-6z" fill="#22c55e"/></svg>
+            <img src="favicon_io/android-chrome-512x512.png" alt="money" style="border-radius: 20%;">
           </span>
           <span class="logo__text">
+            
             <strong>Money</strong>
             <small>SOLUÇÕES FINANCEIRAS</small>
           </span>
@@ -329,11 +358,10 @@
         <h3>Navegação</h3>
         <ul>
           <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#servicos">Serviços</a></li>
           <li><a href="#catalogos">Catálogos</a></li>
           <li><a href="#agendamento">Agendamento</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#calendario">Calendário</a></li>
         </ul>
       </div>
 
@@ -368,15 +396,16 @@
 
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p>&copy; 2026 Money Soluções Financeiras. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Money Soluções Financeiras.</p>
         <div class="footer__legal">
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Termos de Uso</a>
+          <a href="direitos-reservados.html">Todos os direitos reservados.</a>
+          <a href="politica-privacidade.html">Política de Privacidade</a>
+          <a href="termos-uso.html">Termos de Uso</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=1"></script>
 </body>
 </html>
