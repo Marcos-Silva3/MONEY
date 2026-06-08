@@ -1,12 +1,10 @@
 {
   "name": "Money Soluções Financeiras",
   "short_name": "Money",
-  "description": "Financiamentos e soluções financeiras.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0d6efd",
-  "orientation": "portrait",
   "icons": [
     {
       "src": "favicon_io/android-chrome-192x192.png",
