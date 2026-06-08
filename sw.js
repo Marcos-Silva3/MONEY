@@ -2,11 +2,12 @@ const CACHE = "money-v1";
 
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE)
-      .then(cache => cache.addAll([
-        "/",
-        "/index.html"
-      ]))
+    caches.open(CACHE).then(cache =>
+      cache.addAll([
+        "./",
+        "./index.html"
+      ])
+    )
   );
 });
 

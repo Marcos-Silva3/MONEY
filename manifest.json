@@ -1,7 +1,7 @@
 {
   "name": "Money Soluções Financeiras",
   "short_name": "Money",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0d6efd",
